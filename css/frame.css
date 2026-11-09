@@ -1,0 +1,45 @@
+/* GERADO por scripts/romantic_frame_css.py — geometria medida sobre a capa (1900 px). */
+/* --k = px de tela por px da capa (definido em js/ui.js; 0.2 é o padrão sem JS). */
+:root { --k: 0.2; --u: calc(var(--k) * 1px); --band: calc(var(--u) * 182); }
+.frame { position: fixed; inset: 0; z-index: 50; pointer-events: none; }
+.band { position: absolute; background: var(--paper); }
+.band.top { left: 0; right: 0; top: 0; height: calc(var(--u) * 174); }
+.band.bottom { left: 0; right: 0; bottom: 0; height: calc(var(--u) * 162); }
+.band.left { top: 0; bottom: 0; left: 0; width: calc(var(--u) * 176); }
+.band.right { top: 0; bottom: 0; right: 0; width: calc(var(--u) * 184); }
+.chain { position: absolute; background: var(--ink); -webkit-mask-repeat: repeat; mask-repeat: repeat; }
+.chain.top { top: calc(var(--u) * 70); left: calc(var(--u) * 110); right: calc(var(--u) * 110); height: calc(var(--u) * 98); -webkit-mask-image: url(../assets/art/chain-top.webp); mask-image: url(../assets/art/chain-top.webp); -webkit-mask-size: calc(var(--u) * 2280) calc(var(--u) * 98); mask-size: calc(var(--u) * 2280) calc(var(--u) * 98); --period: calc(var(--u) * 2280); }
+.chain.bottom { bottom: calc(var(--u) * 70); left: calc(var(--u) * 110); right: calc(var(--u) * 110); height: calc(var(--u) * 86); -webkit-mask-image: url(../assets/art/chain-bottom.webp); mask-image: url(../assets/art/chain-bottom.webp); -webkit-mask-size: calc(var(--u) * 2220) calc(var(--u) * 86); mask-size: calc(var(--u) * 2220) calc(var(--u) * 86); --period: calc(var(--u) * 2220); }
+.chain.left { left: calc(var(--u) * 70); top: calc(var(--u) * 110); bottom: calc(var(--u) * 110); width: calc(var(--u) * 100); -webkit-mask-image: url(../assets/art/chain-left.webp); mask-image: url(../assets/art/chain-left.webp); -webkit-mask-size: calc(var(--u) * 100) calc(var(--u) * 980); mask-size: calc(var(--u) * 100) calc(var(--u) * 980); --period: calc(var(--u) * 980); }
+.chain.right { right: calc(var(--u) * 70); top: calc(var(--u) * 110); bottom: calc(var(--u) * 110); width: calc(var(--u) * 108); -webkit-mask-image: url(../assets/art/chain-right.webp); mask-image: url(../assets/art/chain-right.webp); -webkit-mask-size: calc(var(--u) * 108) calc(var(--u) * 960); mask-size: calc(var(--u) * 108) calc(var(--u) * 960); --period: calc(var(--u) * 960); }
+.rose { position: absolute; }
+.rose::before, .rose::after { content: ""; position: absolute; inset: 0; -webkit-mask-size: 100% 100%; mask-size: 100% 100%; -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat; }
+.rose::before { background: var(--paper); }
+.rose::after { background: var(--ink); }
+.rose-tl { left: calc(var(--u) * 36); top: calc(var(--u) * 2); width: calc(var(--u) * 240); height: calc(var(--u) * 250); }
+.rose-tl::before { -webkit-mask-image: url(../assets/art/rose-tl-fill.webp); mask-image: url(../assets/art/rose-tl-fill.webp); }
+.rose-tl::after { -webkit-mask-image: url(../assets/art/rose-tl.webp); mask-image: url(../assets/art/rose-tl.webp); }
+.rose-tr { right: calc(var(--u) * 28); top: calc(var(--u) * 30); width: calc(var(--u) * 325); height: calc(var(--u) * 726); }
+.rose-tr::before { -webkit-mask-image: url(../assets/art/rose-tr-fill.webp); mask-image: url(../assets/art/rose-tr-fill.webp); }
+.rose-tr::after { -webkit-mask-image: url(../assets/art/rose-tr.webp); mask-image: url(../assets/art/rose-tr.webp); }
+.rose-bl { left: calc(var(--u) * 54); bottom: calc(var(--u) * 30); width: calc(var(--u) * 341); height: calc(var(--u) * 371); }
+.rose-bl::before { -webkit-mask-image: url(../assets/art/rose-bl-fill.webp); mask-image: url(../assets/art/rose-bl-fill.webp); }
+.rose-bl::after { -webkit-mask-image: url(../assets/art/rose-bl.webp); mask-image: url(../assets/art/rose-bl.webp); }
+.rose-br { right: calc(var(--u) * 23); bottom: calc(var(--u) * 14); width: calc(var(--u) * 220); height: calc(var(--u) * 212); }
+.rose-br::before { -webkit-mask-image: url(../assets/art/rose-br-fill.webp); mask-image: url(../assets/art/rose-br-fill.webp); }
+.rose-br::after { -webkit-mask-image: url(../assets/art/rose-br.webp); mask-image: url(../assets/art/rose-br.webp); }
+.rose-ml { left: calc(var(--u) * 36); top: calc(50% + calc(var(--u) * -109)); width: calc(var(--u) * 204); height: calc(var(--u) * 270); }
+.rose-ml::before { -webkit-mask-image: url(../assets/art/rose-ml-fill.webp); mask-image: url(../assets/art/rose-ml-fill.webp); }
+.rose-ml::after { -webkit-mask-image: url(../assets/art/rose-ml.webp); mask-image: url(../assets/art/rose-ml.webp); }
+.rose-mr { right: calc(var(--u) * 2); top: calc(50% + calc(var(--u) * -65)); width: calc(var(--u) * 256); height: calc(var(--u) * 226); }
+.rose-mr::before { -webkit-mask-image: url(../assets/art/rose-mr-fill.webp); mask-image: url(../assets/art/rose-mr-fill.webp); }
+.rose-mr::after { -webkit-mask-image: url(../assets/art/rose-mr.webp); mask-image: url(../assets/art/rose-mr.webp); }
+@keyframes chain-right { to { -webkit-mask-position: var(--period) 0; mask-position: var(--period) 0; } }
+@keyframes chain-left  { to { -webkit-mask-position: calc(var(--period) * -1) 0; mask-position: calc(var(--period) * -1) 0; } }
+@keyframes chain-down  { to { -webkit-mask-position: 0 var(--period); mask-position: 0 var(--period); } }
+@keyframes chain-up    { to { -webkit-mask-position: 0 calc(var(--period) * -1); mask-position: 0 calc(var(--period) * -1); } }
+html.is-playing .chain.top { animation: chain-right 40s linear infinite; }
+html.is-playing .chain.bottom { animation: chain-left 38.9s linear infinite; }
+html.is-playing .chain.right { animation: chain-down 16.8s linear infinite; }
+html.is-playing .chain.left { animation: chain-up 17.2s linear infinite; }
+@media (prefers-reduced-motion: reduce) { html.is-playing .chain { animation: none; } }
